@@ -11,8 +11,13 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSource{
- var ref: DatabaseReference?
+ 
+    
+    var ref: DatabaseReference?
     var handle:DatabaseHandle?
+    var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
+    
+    
     
     @IBOutlet weak var tableView: UITableView!
     var myList:[String]=[]
@@ -21,7 +26,11 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+activityIndicator.center=self.view.center
+        activityIndicator.hidesWhenStopped=true
+        activityIndicator.activityIndicatorViewStyle=UIActivityIndicatorViewStyle.gray
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
     
     ref = Database.database().reference()
     
@@ -81,7 +90,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
      cell.img.image = UIImage(data: data!)
         
         
-        
+        activityIndicator.stopAnimating()
         return cell
         
     }
