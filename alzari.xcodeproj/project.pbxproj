@@ -26,6 +26,7 @@
 		F1B5E3401F3DC13300838F40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */; };
 		F1B5E3461F3DE87C00838F40 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3451F3DE87C00838F40 /* ViewController1.swift */; };
 		F1B5E3481F3DF57500838F40 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3471F3DF57500838F40 /* ViewController2.swift */; };
+		F1E1194C1F40CCC200459955 /* intro1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1E1194B1F40CCC200459955 /* intro1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1B5E3451F3DE87C00838F40 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		F1B5E3471F3DF57500838F40 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		F1E1194B1F40CCC200459955 /* intro1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		F1B5E3101F3DC07A00838F40 /* alzari */ = {
 			isa = PBXGroup;
 			children = (
+				F1E1194B1F40CCC200459955 /* intro1.jpg */,
 				F1A90D3C1F3F2F45002B05A3 /* bg.jpg */,
 				F1A90D3A1F3F153D002B05A3 /* back.jpg */,
 				F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */,
@@ -313,6 +316,7 @@
 				F1A90D3D1F3F2F45002B05A3 /* bg.jpg in Resources */,
 				F1B5E31C1F3DC07A00838F40 /* LaunchScreen.storyboard in Resources */,
 				F1A90D391F3F12A6002B05A3 /* Asparagus Sprouts.ttf in Resources */,
+				F1E1194C1F40CCC200459955 /* intro1.jpg in Resources */,
 				F1B5E3401F3DC13300838F40 /* GoogleService-Info.plist in Resources */,
 				F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */,
 				F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */,
@@ -395,12 +399,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-alzari/Pods-alzari-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
