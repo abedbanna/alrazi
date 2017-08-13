@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0FD9F006C6B0E96E03D72C /* Pods_alzariUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CB8125431E87B2C7C1C2B /* Pods_alzariUITests.framework */; };
+		8F1C491A30F679E2C5D731F3 /* Pods_alzari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCAD823ED72A1DAEB7180FC /* Pods_alzari.framework */; };
+		D780155D320A68BDE310724B /* Pods_alzariTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E346D766BBF643F2DF124AF5 /* Pods_alzariTests.framework */; };
+		F1A90D331F3EE051002B05A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A90D321F3EE051002B05A3 /* TableViewCell.swift */; };
+		F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D341F3F016A002B05A3 /* KidsGame.ttf */; };
+		F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */; };
+		F1A90D391F3F12A6002B05A3 /* Asparagus Sprouts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */; };
+		F1A90D3B1F3F153D002B05A3 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D3A1F3F153D002B05A3 /* back.jpg */; };
+		F1A90D3D1F3F2F45002B05A3 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D3C1F3F2F45002B05A3 /* bg.jpg */; };
 		F1B5E3121F3DC07A00838F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */; };
 		F1B5E3141F3DC07A00838F40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3131F3DC07A00838F40 /* ViewController.swift */; };
 		F1B5E3171F3DC07A00838F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B5E3151F3DC07A00838F40 /* Main.storyboard */; };
@@ -14,6 +23,9 @@
 		F1B5E31C1F3DC07A00838F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B5E31A1F3DC07A00838F40 /* LaunchScreen.storyboard */; };
 		F1B5E3271F3DC07A00838F40 /* alzariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3261F3DC07A00838F40 /* alzariTests.swift */; };
 		F1B5E3321F3DC07B00838F40 /* alzariUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3311F3DC07B00838F40 /* alzariUITests.swift */; };
+		F1B5E3401F3DC13300838F40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */; };
+		F1B5E3461F3DE87C00838F40 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3451F3DE87C00838F40 /* ViewController1.swift */; };
+		F1B5E3481F3DF57500838F40 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3471F3DF57500838F40 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		264DC91D7F50A5D25B59CC4D /* Pods-alzariTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzariTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alzariTests/Pods-alzariTests.debug.xcconfig"; sourceTree = "<group>"; };
+		486CB8125431E87B2C7C1C2B /* Pods_alzariUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alzariUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9B4513A98F595FA3CE1852 /* Pods-alzariUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzariUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-alzariUITests/Pods-alzariUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6FCAD823ED72A1DAEB7180FC /* Pods_alzari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alzari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C9EA0E2BDAF74F8E380932 /* Pods-alzariUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzariUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alzariUITests/Pods-alzariUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77D1F8646BA3A68923E0736D /* Pods-alzariTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzariTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-alzariTests/Pods-alzariTests.release.xcconfig"; sourceTree = "<group>"; };
+		D33FB063855F9AFB05E90BE2 /* Pods-alzari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzari.release.xcconfig"; path = "Pods/Target Support Files/Pods-alzari/Pods-alzari.release.xcconfig"; sourceTree = "<group>"; };
+		E13868ED6D4DD70BE9BD5DB3 /* Pods-alzari.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzari.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alzari/Pods-alzari.debug.xcconfig"; sourceTree = "<group>"; };
+		E346D766BBF643F2DF124AF5 /* Pods_alzariTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alzariTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A90D321F3EE051002B05A3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F1A90D341F3F016A002B05A3 /* KidsGame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KidsGame.ttf; sourceTree = "<group>"; };
+		F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CookieMonster.ttf; sourceTree = "<group>"; };
+		F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asparagus Sprouts.ttf"; sourceTree = "<group>"; };
+		F1A90D3A1F3F153D002B05A3 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		F1A90D3C1F3F2F45002B05A3 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		F1B5E30E1F3DC07A00838F40 /* alzari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alzari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1B5E3131F3DC07A00838F40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +74,9 @@
 		F1B5E32D1F3DC07B00838F40 /* alzariUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alzariUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B5E3311F3DC07B00838F40 /* alzariUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alzariUITests.swift; sourceTree = "<group>"; };
 		F1B5E3331F3DC07B00838F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1B5E3451F3DE87C00838F40 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		F1B5E3471F3DF57500838F40 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1C491A30F679E2C5D731F3 /* Pods_alzari.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D780155D320A68BDE310724B /* Pods_alzariTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +100,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0FD9F006C6B0E96E03D72C /* Pods_alzariUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08AAE83F5EF3E824591C9F41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FCAD823ED72A1DAEB7180FC /* Pods_alzari.framework */,
+				E346D766BBF643F2DF124AF5 /* Pods_alzariTests.framework */,
+				486CB8125431E87B2C7C1C2B /* Pods_alzariUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79A96319221676418DD1283D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E13868ED6D4DD70BE9BD5DB3 /* Pods-alzari.debug.xcconfig */,
+				D33FB063855F9AFB05E90BE2 /* Pods-alzari.release.xcconfig */,
+				264DC91D7F50A5D25B59CC4D /* Pods-alzariTests.debug.xcconfig */,
+				77D1F8646BA3A68923E0736D /* Pods-alzariTests.release.xcconfig */,
+				74C9EA0E2BDAF74F8E380932 /* Pods-alzariUITests.debug.xcconfig */,
+				6B9B4513A98F595FA3CE1852 /* Pods-alzariUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F1B5E3051F3DC07A00838F40 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +137,8 @@
 				F1B5E3251F3DC07A00838F40 /* alzariTests */,
 				F1B5E3301F3DC07B00838F40 /* alzariUITests */,
 				F1B5E30F1F3DC07A00838F40 /* Products */,
+				79A96319221676418DD1283D /* Pods */,
+				08AAE83F5EF3E824591C9F41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +155,18 @@
 		F1B5E3101F3DC07A00838F40 /* alzari */ = {
 			isa = PBXGroup;
 			children = (
+				F1A90D3C1F3F2F45002B05A3 /* bg.jpg */,
+				F1A90D3A1F3F153D002B05A3 /* back.jpg */,
+				F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */,
+				F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */,
+				F1A90D341F3F016A002B05A3 /* KidsGame.ttf */,
+				F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */,
 				F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */,
 				F1B5E3131F3DC07A00838F40 /* ViewController.swift */,
 				F1B5E3151F3DC07A00838F40 /* Main.storyboard */,
+				F1A90D321F3EE051002B05A3 /* TableViewCell.swift */,
+				F1B5E3471F3DF57500838F40 /* ViewController2.swift */,
+				F1B5E3451F3DE87C00838F40 /* ViewController1.swift */,
 				F1B5E3181F3DC07A00838F40 /* Assets.xcassets */,
 				F1B5E31A1F3DC07A00838F40 /* LaunchScreen.storyboard */,
 				F1B5E31D1F3DC07A00838F40 /* Info.plist */,
@@ -132,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1B5E3361F3DC07B00838F40 /* Build configuration list for PBXNativeTarget "alzari" */;
 			buildPhases = (
+				B21314D1B34D5C6552D7F92F /* [CP] Check Pods Manifest.lock */,
 				F1B5E30A1F3DC07A00838F40 /* Sources */,
 				F1B5E30B1F3DC07A00838F40 /* Frameworks */,
 				F1B5E30C1F3DC07A00838F40 /* Resources */,
+				6A36DCFC4C431E5D395FEE32 /* [CP] Embed Pods Frameworks */,
+				8DD1B4E3665EC6EA209640EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1B5E3391F3DC07B00838F40 /* Build configuration list for PBXNativeTarget "alzariTests" */;
 			buildPhases = (
+				E7BFCA8864D87CCEECDDA08C /* [CP] Check Pods Manifest.lock */,
 				F1B5E31E1F3DC07A00838F40 /* Sources */,
 				F1B5E31F1F3DC07A00838F40 /* Frameworks */,
 				F1B5E3201F3DC07A00838F40 /* Resources */,
+				532EC3A4C98C5A65E99F51F0 /* [CP] Embed Pods Frameworks */,
+				A7033F2F0DD1D413B0B8B82F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1B5E33C1F3DC07B00838F40 /* Build configuration list for PBXNativeTarget "alzariUITests" */;
 			buildPhases = (
+				0679936C9EC719ACEDAFEEED /* [CP] Check Pods Manifest.lock */,
 				F1B5E3291F3DC07B00838F40 /* Sources */,
 				F1B5E32A1F3DC07B00838F40 /* Frameworks */,
 				F1B5E32B1F3DC07B00838F40 /* Resources */,
+				B284B5712E6027DA684F029A /* [CP] Embed Pods Frameworks */,
+				5C76ACDEDAD7EE88402D2958 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +269,7 @@
 				TargetAttributes = {
 					F1B5E30D1F3DC07A00838F40 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XJG5EH7JWQ;
 						ProvisioningStyle = Automatic;
 					};
 					F1B5E3211F3DC07A00838F40 = {
@@ -232,7 +309,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A90D3B1F3F153D002B05A3 /* back.jpg in Resources */,
+				F1A90D3D1F3F2F45002B05A3 /* bg.jpg in Resources */,
 				F1B5E31C1F3DC07A00838F40 /* LaunchScreen.storyboard in Resources */,
+				F1A90D391F3F12A6002B05A3 /* Asparagus Sprouts.ttf in Resources */,
+				F1B5E3401F3DC13300838F40 /* GoogleService-Info.plist in Resources */,
+				F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */,
+				F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */,
 				F1B5E3191F3DC07A00838F40 /* Assets.xcassets in Resources */,
 				F1B5E3171F3DC07A00838F40 /* Main.storyboard in Resources */,
 			);
@@ -254,11 +337,168 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0679936C9EC719ACEDAFEEED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alzariUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		532EC3A4C98C5A65E99F51F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alzariTests/Pods-alzariTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C76ACDEDAD7EE88402D2958 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alzariUITests/Pods-alzariUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A36DCFC4C431E5D395FEE32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-alzari/Pods-alzari-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alzari/Pods-alzari-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DD1B4E3665EC6EA209640EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alzari/Pods-alzari-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7033F2F0DD1D413B0B8B82F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alzariTests/Pods-alzariTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21314D1B34D5C6552D7F92F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alzari-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B284B5712E6027DA684F029A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alzariUITests/Pods-alzariUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7BFCA8864D87CCEECDDA08C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alzariTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1B5E30A1F3DC07A00838F40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A90D331F3EE051002B05A3 /* TableViewCell.swift in Sources */,
+				F1B5E3461F3DE87C00838F40 /* ViewController1.swift in Sources */,
+				F1B5E3481F3DF57500838F40 /* ViewController2.swift in Sources */,
 				F1B5E3141F3DC07A00838F40 /* ViewController.swift in Sources */,
 				F1B5E3121F3DC07A00838F40 /* AppDelegate.swift in Sources */,
 			);
@@ -412,8 +652,10 @@
 		};
 		F1B5E3371F3DC07B00838F40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13868ED6D4DD70BE9BD5DB3 /* Pods-alzari.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJG5EH7JWQ;
 				INFOPLIST_FILE = alzari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Albanna.alzari;
@@ -424,8 +666,10 @@
 		};
 		F1B5E3381F3DC07B00838F40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D33FB063855F9AFB05E90BE2 /* Pods-alzari.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJG5EH7JWQ;
 				INFOPLIST_FILE = alzari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Albanna.alzari;
@@ -436,6 +680,7 @@
 		};
 		F1B5E33A1F3DC07B00838F40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264DC91D7F50A5D25B59CC4D /* Pods-alzariTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +695,7 @@
 		};
 		F1B5E33B1F3DC07B00838F40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D1F8646BA3A68923E0736D /* Pods-alzariTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +710,7 @@
 		};
 		F1B5E33D1F3DC07B00838F40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C9EA0E2BDAF74F8E380932 /* Pods-alzariUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = alzariUITests/Info.plist;
@@ -477,6 +724,7 @@
 		};
 		F1B5E33E1F3DC07B00838F40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9B4513A98F595FA3CE1852 /* Pods-alzariUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = alzariUITests/Info.plist;
@@ -507,6 +755,7 @@
 				F1B5E3381F3DC07B00838F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1B5E3391F3DC07B00838F40 /* Build configuration list for PBXNativeTarget "alzariTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +764,7 @@
 				F1B5E33B1F3DC07B00838F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1B5E33C1F3DC07B00838F40 /* Build configuration list for PBXNativeTarget "alzariUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +773,7 @@
 				F1B5E33E1F3DC07B00838F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
