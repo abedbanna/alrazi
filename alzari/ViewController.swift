@@ -13,20 +13,20 @@ import TransitionButton
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var btnStack: UIStackView!
-    @IBOutlet weak var innerStack: UIStackView!
-    @IBOutlet weak var stack: UIStackView!
+  
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
     @IBOutlet weak var btn_stack: UIStackView!
     
+    @IBOutlet weak var signupStack: UIStackView!
     
     let newViewController = UITableViewController()
     
     let button = TransitionButton(frame: CGRect(x: 100, y: 100, width: 100, height: 40)) // please use Autolayout in real project
 
     
+        let btnSignup = TransitionButton(frame: CGRect(x: 100, y: 100, width: 100, height: 40)) // please use Autolayout in real project
     
     
  func loginOP(_ sender: Any) {
@@ -96,13 +96,13 @@ class ViewController: UIViewController {
         backgroundQueue.async(execute: {
             
             sleep(3) // 3: Do your networking task or background work here.
-            
+            self.loginOP(button)
             DispatchQueue.main.async(execute: { () -> Void in
                
-                button.stopAnimation(animationStyle: .expand, completion: {
+                button.stopAnimation(animationStyle: .shake, completion: {
                    
                     
-                    self.loginOP(button)
+                    
                     
                     
                     
@@ -131,6 +131,18 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
        
           self.btn_stack.addArrangedSubview(button)
+        
+        
+        
+        btnSignup.backgroundColor = UIColor(hue: 0.5528, saturation: 0.74, brightness: 0.83, alpha: 1.0)
+        btnSignup.setTitle("Signup", for: .normal)
+        btnSignup.cornerRadius = 20
+        btnSignup.spinnerColor = .white
+        btnSignup.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
+        
+        self.signupStack.addArrangedSubview(btnSignup)
+        
+        
    
     }
 
