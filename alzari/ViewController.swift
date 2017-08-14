@@ -124,7 +124,7 @@ class ViewController: UIViewController {
         btn_stack.distribution = .fill
         btn_stack.spacing = 18
         
-        button.backgroundColor = UIColor(hue: 0.0583, saturation: 0.42, brightness: 0.52, alpha: 1.0) /* #85604c */
+        button.backgroundColor = UIColor(hue: 0.0222, saturation: 0.71, brightness: 0.77, alpha: 1.0) /* #c44b38 */
         button.setTitle("Login", for: .normal)
         button.cornerRadius = 20
         button.spinnerColor = .white
@@ -145,7 +145,10 @@ class ViewController: UIViewController {
         
    
     }
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
