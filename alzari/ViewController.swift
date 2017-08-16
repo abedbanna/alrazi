@@ -134,6 +134,11 @@ class ViewController: UIViewController {
         
         
         
+        signupStack.axis = .horizontal
+        signupStack.alignment = .firstBaseline
+        signupStack.distribution = .fill
+        signupStack.spacing = 18
+        
         btnSignup.backgroundColor = UIColor(hue: 0.5528, saturation: 0.74, brightness: 0.83, alpha: 1.0)
         btnSignup.setTitle("Signup", for: .normal)
         btnSignup.cornerRadius = 20
