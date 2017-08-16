@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage
 
 class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSource{
  
@@ -69,7 +70,7 @@ activityIndicator.center=self.view.center
         // Pass the selected object to the new view controller.
     }
     */
-    
+   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myList.count
@@ -84,15 +85,22 @@ activityIndicator.center=self.view.center
         }
         
        cell.videoTitle?.text=myList[indexPath.row]
+    
+        Storage.storage().reference(forURL: myPath[indexPath.row]).getData(maxSize: 10 * 1024 * 1024, completion: { (data, error) in
+            DispatchQueue.main.async() {
+                cell.img.image = UIImage(data: data!)
+               
+            }
+        })
         
-        let url = URL(string: myPath[indexPath.row])
-        let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-     cell.img.image = UIImage(data: data!)
         
         
         activityIndicator.stopAnimating()
         return cell
         
     }
+    
+  
+
 
 }
