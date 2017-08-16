@@ -16,6 +16,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     var ref: DatabaseReference?
     var handle:DatabaseHandle?
+    var storageRef:StorageReference?
     var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     
     
@@ -27,6 +28,8 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+             print("hi")
 activityIndicator.center=self.view.center
         activityIndicator.hidesWhenStopped=true
         activityIndicator.activityIndicatorViewStyle=UIActivityIndicatorViewStyle.gray
@@ -34,6 +37,7 @@ activityIndicator.center=self.view.center
         activityIndicator.startAnimating()
     
     ref = Database.database().reference()
+         storageRef=Storage.storage().reference()
     
     handle=ref?.child("list").observe(.childAdded, with: { (snapshot) in
         
@@ -76,6 +80,7 @@ activityIndicator.center=self.view.center
         return myList.count
     }
     
+    var rendared:[String]=[]
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        //let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
         
@@ -86,14 +91,24 @@ activityIndicator.center=self.view.center
         
        cell.videoTitle?.text=myList[indexPath.row]
     
+        if !rendared.contains(myList[indexPath.row])
+        {
+        
+        
+        
         Storage.storage().reference(forURL: myPath[indexPath.row]).getData(maxSize: 10 * 1024 * 1024, completion: { (data, error) in
             DispatchQueue.main.async() {
+        
                 cell.img.image = UIImage(data: data!)
                
             }
         })
+            
+            rendared.append(myList[indexPath.row])
+        }
+            
         
-        
+   print("hi ", myList[indexPath.row])
         
         activityIndicator.stopAnimating()
         return cell
