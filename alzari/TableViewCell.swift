@@ -7,7 +7,8 @@
 //
 
 import UIKit
-var myFav:[Video]=[]
+//var myFav:[Video]=[]
+var myFav=[Video]()
 class TableViewCell: UITableViewCell {
 
     
@@ -30,7 +31,23 @@ class TableViewCell: UITableViewCell {
         
         let confirmed = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: {
         (action: UIAlertAction!) in
-            myFav.append(myList[index])
+            
+           let v=myList[index]
+            
+           let video=Video(title: v.Title, author:v.Author, youtube: v.Youtube, image: v.Image)
+            
+            
+            myFav.append(video)
+            
+          
+           ArchiveUtil.saveFav(Video: myFav)
+            
+            
+           
+            
+            
+            
+            
         })
         let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
         
@@ -43,7 +60,10 @@ class TableViewCell: UITableViewCell {
     }
     
    
-
+    func archivePeople(Video_list:[Video]) -> NSData {
+        let archivedObject = NSKeyedArchiver.archivedData(withRootObject: Video_list as NSArray)
+        return archivedObject as NSData
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -15,11 +15,21 @@ class FavController: UIViewController, UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-
-    self.tableView.reloadData()
+        if UserDefaults.standard.object(forKey: "fav_list") != nil
+        {
+       myFav=ArchiveUtil.loadFav()!
+             self.tableView.reloadData()
+        }
+        
+       
     }
     override func viewWillAppear(_ animated: Bool) {
-       self.tableView.reloadData()
+        if UserDefaults.standard.object(forKey: "fav_list") != nil
+        {
+            myFav=ArchiveUtil.loadFav()!
+            self.tableView.reloadData()
+        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,4 +67,13 @@ class FavController: UIViewController, UITableViewDelegate,UITableViewDataSource
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle==UITableViewCellEditingStyle.delete
+        {
+            myFav.remove(at: indexPath.row)
+             ArchiveUtil.saveFav(Video: myFav)
+            self.tableView.reloadData()
+        
+        }
+    }
 }

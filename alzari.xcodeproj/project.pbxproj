@@ -34,6 +34,7 @@
 		F1E119561F4151BA00459955 /* mother.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E119551F4151BA00459955 /* mother.png */; };
 		F1E119581F41540D00459955 /* pass.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E119571F41540D00459955 /* pass.png */; };
 		F1E1195B1F47077C00459955 /* myWifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1195A1F47077C00459955 /* myWifi.swift */; };
+		F1E5D9CF1F47719100580E63 /* ArchiveUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5D9CE1F47719100580E63 /* ArchiveUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		F1E119551F4151BA00459955 /* mother.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mother.png; sourceTree = "<group>"; };
 		F1E119571F41540D00459955 /* pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pass.png; sourceTree = "<group>"; };
 		F1E1195A1F47077C00459955 /* myWifi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myWifi.swift; sourceTree = "<group>"; };
+		F1E5D9CE1F47719100580E63 /* ArchiveUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				F1B5E31A1F3DC07A00838F40 /* LaunchScreen.storyboard */,
 				F1B5E31D1F3DC07A00838F40 /* Info.plist */,
 				F1E119531F414F7C00459955 /* DesignableUITextField.swift */,
+				F1E5D9CE1F47719100580E63 /* ArchiveUtil.swift */,
 			);
 			path = alzari;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A90D331F3EE051002B05A3 /* TableViewCell.swift in Sources */,
+				F1E5D9CF1F47719100580E63 /* ArchiveUtil.swift in Sources */,
 				F1B5E3461F3DE87C00838F40 /* ViewController1.swift in Sources */,
 				F1B5E3481F3DF57500838F40 /* ViewController2.swift in Sources */,
 				F1E119541F414F7C00459955 /* DesignableUITextField.swift in Sources */,

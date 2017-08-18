@@ -52,11 +52,8 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
           // print(item["url"] ?? "ee")
             
-            let video = Video()
-            video.Title=item["title"]!
-            video.Author=item["author"]!
-            video.URL=item["url"]!
-            video.Youtube=item["youtube"]!
+            let video = Video(title: item["title"]!, author: item["author"]!, youtube: item["youtube"]!,url:item["url"]!)
+           
             
             
              myList.append(video)
