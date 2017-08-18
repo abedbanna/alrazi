@@ -28,8 +28,12 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     override func viewWillAppear(_ animated: Bool) {
        
         
-        myFav=ArchiveUtil.loadFav()!
-        print("hi")
+        if UserDefaults.standard.object(forKey: "fav_list") != nil
+        {
+            myFav=ArchiveUtil.loadFav()!
+           
+        }
+        //print("hi")
         self.tableView.reloadData()
     }
     
@@ -131,7 +135,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
        cell.videoTitle?.text=myList[indexPath.row].Title
         cell.lblAuthor?.text=myList[indexPath.row].Author
        cell.btnFav.tag=indexPath.row
-       
+       //print("hi from table view")
         
         for  fav in myFav
         {
@@ -140,8 +144,13 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
        
         
         { cell.btnFav.isHidden = true}
-        
+            else
+            {cell.btnFav.isHidden = false}
+            
+
         }
+        if myFav.count==0
+        { cell.btnFav.isHidden = false}
         
         if !rendared.contains(myList[indexPath.row].Title)
         {
