@@ -10,6 +10,9 @@
 		5F0FD9F006C6B0E96E03D72C /* Pods_alzariUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CB8125431E87B2C7C1C2B /* Pods_alzariUITests.framework */; };
 		8F1C491A30F679E2C5D731F3 /* Pods_alzari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCAD823ED72A1DAEB7180FC /* Pods_alzari.framework */; };
 		D780155D320A68BDE310724B /* Pods_alzariTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E346D766BBF643F2DF124AF5 /* Pods_alzariTests.framework */; };
+		F133FCEF1F470BDC00A05094 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCEE1F470BDC00A05094 /* Video.swift */; };
+		F133FCF11F4727CF00A05094 /* FavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCF01F4727CF00A05094 /* FavController.swift */; };
+		F133FCF31F472A3600A05094 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCF21F472A3600A05094 /* FavTableViewCell.swift */; };
 		F1A90D331F3EE051002B05A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A90D321F3EE051002B05A3 /* TableViewCell.swift */; };
 		F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D341F3F016A002B05A3 /* KidsGame.ttf */; };
 		F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */; };
@@ -30,6 +33,7 @@
 		F1E119541F414F7C00459955 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E119531F414F7C00459955 /* DesignableUITextField.swift */; };
 		F1E119561F4151BA00459955 /* mother.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E119551F4151BA00459955 /* mother.png */; };
 		F1E119581F41540D00459955 /* pass.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E119571F41540D00459955 /* pass.png */; };
+		F1E1195B1F47077C00459955 /* myWifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1195A1F47077C00459955 /* myWifi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,9 @@
 		D33FB063855F9AFB05E90BE2 /* Pods-alzari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzari.release.xcconfig"; path = "Pods/Target Support Files/Pods-alzari/Pods-alzari.release.xcconfig"; sourceTree = "<group>"; };
 		E13868ED6D4DD70BE9BD5DB3 /* Pods-alzari.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzari.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alzari/Pods-alzari.debug.xcconfig"; sourceTree = "<group>"; };
 		E346D766BBF643F2DF124AF5 /* Pods_alzariTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alzariTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F133FCEE1F470BDC00A05094 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
+		F133FCF01F4727CF00A05094 /* FavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavController.swift; sourceTree = "<group>"; };
+		F133FCF21F472A3600A05094 /* FavTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		F1A90D321F3EE051002B05A3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F1A90D341F3F016A002B05A3 /* KidsGame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KidsGame.ttf; sourceTree = "<group>"; };
 		F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CookieMonster.ttf; sourceTree = "<group>"; };
@@ -85,6 +92,7 @@
 		F1E119531F414F7C00459955 /* DesignableUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		F1E119551F4151BA00459955 /* mother.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mother.png; sourceTree = "<group>"; };
 		F1E119571F41540D00459955 /* pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pass.png; sourceTree = "<group>"; };
+		F1E1195A1F47077C00459955 /* myWifi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myWifi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,8 @@
 		F1B5E3101F3DC07A00838F40 /* alzari */ = {
 			isa = PBXGroup;
 			children = (
+				F133FCEE1F470BDC00A05094 /* Video.swift */,
+				F1E1195A1F47077C00459955 /* myWifi.swift */,
 				F1E119571F41540D00459955 /* pass.png */,
 				F1E119551F4151BA00459955 /* mother.png */,
 				F1E1194B1F40CCC200459955 /* intro1.jpg */,
@@ -178,6 +188,8 @@
 				F1A90D321F3EE051002B05A3 /* TableViewCell.swift */,
 				F1B5E3471F3DF57500838F40 /* ViewController2.swift */,
 				F1B5E3451F3DE87C00838F40 /* ViewController1.swift */,
+				F133FCF01F4727CF00A05094 /* FavController.swift */,
+				F133FCF21F472A3600A05094 /* FavTableViewCell.swift */,
 				F1B5E3181F3DC07A00838F40 /* Assets.xcassets */,
 				F1B5E31A1F3DC07A00838F40 /* LaunchScreen.storyboard */,
 				F1B5E31D1F3DC07A00838F40 /* Info.plist */,
@@ -520,7 +532,11 @@
 				F1B5E3481F3DF57500838F40 /* ViewController2.swift in Sources */,
 				F1E119541F414F7C00459955 /* DesignableUITextField.swift in Sources */,
 				F1B5E3141F3DC07A00838F40 /* ViewController.swift in Sources */,
+				F133FCEF1F470BDC00A05094 /* Video.swift in Sources */,
+				F133FCF11F4727CF00A05094 /* FavController.swift in Sources */,
 				F1B5E3121F3DC07A00838F40 /* AppDelegate.swift in Sources */,
+				F1E1195B1F47077C00459955 /* myWifi.swift in Sources */,
+				F133FCF31F472A3600A05094 /* FavTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

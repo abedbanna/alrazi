@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
-
+var myList:[Video]=[]
 class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSource{
  
     
@@ -22,15 +22,21 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     
     @IBOutlet weak var tableView: UITableView!
-    var myList:[String]=[]
-    var myPath:[String]=[]
-  
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-             print("hi")
-activityIndicator.center=self.view.center
+        let wifi=myWifi()
+       
+        
+        
+        if wifi.isInternetAvailable()
+        {
+        activityIndicator.center=self.view.center
         activityIndicator.hidesWhenStopped=true
         activityIndicator.activityIndicatorViewStyle=UIActivityIndicatorViewStyle.gray
         view.addSubview(activityIndicator)
@@ -45,8 +51,17 @@ activityIndicator.center=self.view.center
         {
     
           // print(item["url"] ?? "ee")
-            self.myList.append(item["username"]!)
-             self.myPath.append(item["url"]!)
+            
+            let video = Video()
+            video.Title=item["title"]!
+            video.Author=item["author"]!
+            video.URL=item["url"]!
+            video.Youtube=item["youtube"]!
+            
+            
+             myList.append(video)
+            
+           
             
            self.tableView.reloadData()
         }
@@ -57,28 +72,42 @@ activityIndicator.center=self.view.center
     }
     
         // Do any additional setup after loading the view.
+    }//end wifi connection checker 
+        
+        
+        else
+        {
+        
+            
+            let alertController = UIAlertController(title: "Internet Connection", message:"No Internet", preferredStyle: UIAlertControllerStyle.alert)
+            
+            
+            let confirmed = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
+            let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
+            
+            alertController.addAction(confirmed)
+            alertController.addAction(cancel)
+            self.present(alertController, animated: true, completion: nil)
+            
+            
+        }
+        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
+    
+    
    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myList.count
     }
+    
     
     var rendared:[String]=[]
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -89,26 +118,32 @@ activityIndicator.center=self.view.center
             fatalError("The dequeued cell is not an instance of MealTableViewCell.")
         }
         
-       cell.videoTitle?.text=myList[indexPath.row]
-    
-        if !rendared.contains(myList[indexPath.row])
+       cell.videoTitle?.text=myList[indexPath.row].Title
+        cell.lblAuthor?.text=myList[indexPath.row].Author
+       cell.btnFav.tag=indexPath.row
+       
+        
+        
+        
+        if !rendared.contains(myList[indexPath.row].Title)
         {
         
         
         
-        Storage.storage().reference(forURL: myPath[indexPath.row]).getData(maxSize: 10 * 1024 * 1024, completion: { (data, error) in
+        Storage.storage().reference(forURL: myList[indexPath.row].URL).getData(maxSize: 10 * 1024 * 1024, completion: { (data, error) in
             DispatchQueue.main.async() {
         
                 cell.img.image = UIImage(data: data!)
+                myList[indexPath.row].Image=cell.img.image!
                
             }
         })
             
-            rendared.append(myList[indexPath.row])
+            rendared.append(myList[indexPath.row].Title)
         }
             
         
-   print("hi ", myList[indexPath.row])
+
         
         activityIndicator.stopAnimating()
         return cell
