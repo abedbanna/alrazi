@@ -17,7 +17,7 @@ class FavController: UIViewController, UITableViewDelegate,UITableViewDataSource
         // Do any additional setup after loading the view.
         if UserDefaults.standard.object(forKey: "fav_list") != nil
         {
-       myFav=ArchiveUtil.loadFav()!
+            myFav=ArchiveUtil.loadFav()!
              self.tableView.reloadData()
         }
         

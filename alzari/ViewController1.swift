@@ -25,7 +25,13 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+       
+        
+        myFav=ArchiveUtil.loadFav()!
+        print("hi")
+        self.tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,6 +95,13 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
             
         }
         
+        // Do any additional setup after loading the view.
+        if UserDefaults.standard.object(forKey: "fav_list") != nil
+        {
+            myFav=ArchiveUtil.loadFav()!
+           // self.tableView.reloadData()
+        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -120,7 +133,15 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
        cell.btnFav.tag=indexPath.row
        
         
+        for  fav in myFav
+        {
         
+            if fav.Title.isEqual( myList[indexPath.row].Title)
+       
+        
+        { cell.btnFav.isHidden = true}
+        
+        }
         
         if !rendared.contains(myList[indexPath.row].Title)
         {

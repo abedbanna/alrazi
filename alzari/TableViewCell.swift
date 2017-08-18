@@ -41,7 +41,7 @@ class TableViewCell: UITableViewCell {
             
           
            ArchiveUtil.saveFav(Video: myFav)
-            
+            (sender as! UIButton).isHidden=true
             
            
             
