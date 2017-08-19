@@ -39,7 +39,9 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       if myList.count==0
         
+       {
         let wifi=myWifi()
        
         
@@ -106,6 +108,8 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
            // self.tableView.reloadData()
         }
         
+    }
+    
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -180,6 +184,6 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     }
     
   
-
+    
 
 }

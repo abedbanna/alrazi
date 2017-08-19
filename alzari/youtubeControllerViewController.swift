@@ -8,7 +8,7 @@
 
 import UIKit
 import youtube_ios_player_helper
-
+var selectedVideo:Video?=nil
 class youtubeControllerViewController: UIViewController {
 var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     override func viewDidLoad() {
@@ -19,27 +19,31 @@ var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+       
+        if selectedVideo?.Youtube != nil
+        {
         activityIndicator.center=self.view.center
         activityIndicator.hidesWhenStopped=true
         activityIndicator.activityIndicatorViewStyle=UIActivityIndicatorViewStyle.gray
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
-        
-       //sleep(2)
-        //self.activityIndicator.stopAnimating()
+   
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
-           if  self.viewer.load(withVideoId: "M7lc1UVf-VE")
-           {
-            //sleep(1)
-            self.activityIndicator.stopAnimating()
-            }
             
            
+           if  self.viewer.load(withVideoId: (selectedVideo?.Youtube)!)
+           {
+            //sleep(1)
+            //self.activityIndicator.stopAnimating()
+            }
+            
+            }
     
             
           
         }
         
+    
     }
     
     

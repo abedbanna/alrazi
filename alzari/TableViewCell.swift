@@ -10,7 +10,7 @@ import UIKit
 //var myFav:[Video]=[]
 var myFav=[Video]()
 class TableViewCell: UITableViewCell {
-
+ 
     
     @IBOutlet weak var videoTitle: UILabel!
     @IBOutlet weak var videoImag: UIView!
@@ -22,8 +22,18 @@ class TableViewCell: UITableViewCell {
     
     @IBAction func showVideo(_ sender: Any) {
           let index = (sender as! UIButton).tag
-       let url = NSURL(string:myList[index].Youtube)!
-         UIApplication.shared.openURL(url as URL)
+          selectedVideo = myList[index]
+        print(index)
+      
+       // self.window?.rootViewController?.performSegue(withIdentifier: "segue1", sender: self)
+        if self.window!.rootViewController as? UITabBarController != nil {
+            let tababarController = self.window!.rootViewController as! UITabBarController
+  
+            tababarController.selectedIndex = 3
+        }
+
+
+        
     }
     
     @IBOutlet weak var lblAuthor: UILabel!

@@ -36,6 +36,7 @@
 		F1E1195B1F47077C00459955 /* myWifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1195A1F47077C00459955 /* myWifi.swift */; };
 		F1E5D9CF1F47719100580E63 /* ArchiveUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5D9CE1F47719100580E63 /* ArchiveUtil.swift */; };
 		F1E5D9D11F48396900580E63 /* youtubeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5D9D01F48396900580E63 /* youtubeControllerViewController.swift */; };
+		F1E5D9D51F48D1FC00580E63 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E5D9D41F48D1FC00580E63 /* video.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		F1E5D9CE1F47719100580E63 /* ArchiveUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveUtil.swift; sourceTree = "<group>"; };
 		F1E5D9D01F48396900580E63 /* youtubeControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = youtubeControllerViewController.swift; sourceTree = "<group>"; };
 		F1E5D9D21F483CAE00580E63 /* YouTubePlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YouTubePlayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/alzari-dhoobriseeqvlwcvywcblyieyugq/Build/Products/Debug-iphonesimulator/YouTubePlayer/YouTubePlayer.framework"; sourceTree = "<group>"; };
+		F1E5D9D41F48D1FC00580E63 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video.png; path = ../../../../Icons/roro/video.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		F1B5E3101F3DC07A00838F40 /* alzari */ = {
 			isa = PBXGroup;
 			children = (
+				F1E5D9D41F48D1FC00580E63 /* video.png */,
 				F133FCEE1F470BDC00A05094 /* Video.swift */,
 				F1E1195A1F47077C00459955 /* myWifi.swift */,
 				F1E119571F41540D00459955 /* pass.png */,
@@ -345,6 +348,7 @@
 				F1A90D3D1F3F2F45002B05A3 /* bg.jpg in Resources */,
 				F1E119581F41540D00459955 /* pass.png in Resources */,
 				F1B5E31C1F3DC07A00838F40 /* LaunchScreen.storyboard in Resources */,
+				F1E5D9D51F48D1FC00580E63 /* video.png in Resources */,
 				F1A90D391F3F12A6002B05A3 /* Asparagus Sprouts.ttf in Resources */,
 				F1E1194C1F40CCC200459955 /* intro1.jpg in Resources */,
 				F1B5E3401F3DC13300838F40 /* GoogleService-Info.plist in Resources */,
