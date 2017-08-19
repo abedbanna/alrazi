@@ -18,7 +18,13 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var btnFav: UIButton!
     
+    @IBOutlet weak var btnShow: UIButton!
     
+    @IBAction func showVideo(_ sender: Any) {
+          let index = (sender as! UIButton).tag
+       let url = NSURL(string:myList[index].Youtube)!
+         UIApplication.shared.openURL(url as URL)
+    }
     
     @IBOutlet weak var lblAuthor: UILabel!
     @IBAction func addToFavorite(_ sender: Any) {

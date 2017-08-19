@@ -132,10 +132,12 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
             fatalError("The dequeued cell is not an instance of MealTableViewCell.")
         }
         
-       cell.videoTitle?.text=myList[indexPath.row].Title
+        cell.videoTitle?.text=myList[indexPath.row].Title
         cell.lblAuthor?.text=myList[indexPath.row].Author
-       cell.btnFav.tag=indexPath.row
-       //print("hi from table view")
+        cell.btnFav.tag=indexPath.row
+        cell.btnShow.tag=indexPath.row
+       
+       
         
         for  fav in myFav
         {
