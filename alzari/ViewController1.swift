@@ -32,16 +32,15 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         {
             myFav=ArchiveUtil.loadFav()!
            
-        }
-        //print("hi")
+        }d
+      
+        
         self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       if myList.count==0
-        
-       {
+      
         let wifi=myWifi()
        
         
@@ -61,18 +60,23 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         
         if let item = snapshot.value as? [String : String]
         {
-    
-          // print(item["url"] ?? "ee")
             
             let video = Video(title: item["title"]!, author: item["author"]!, youtube: item["youtube"]!,url:item["url"]!)
            
             
             
              myList.append(video)
+            // Do any additional setup after loading the view.
+            
+            if UserDefaults.standard.object(forKey: "fav_list") != nil
+            {
+                myFav=ArchiveUtil.loadFav()!
+                // self.tableView.reloadData()
+            }
             
            
-            
            self.tableView.reloadData()
+           
         }
         
         
@@ -101,14 +105,8 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
             
         }
         
-        // Do any additional setup after loading the view.
-        if UserDefaults.standard.object(forKey: "fav_list") != nil
-        {
-            myFav=ArchiveUtil.loadFav()!
-           // self.tableView.reloadData()
-        }
-        
-    }
+       
+    
     
     }
     override func didReceiveMemoryWarning() {
