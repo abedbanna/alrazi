@@ -11,6 +11,7 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
 var myList:[Video]=[]
+ var viewed:[String]=[]
 class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSource{
  
     
@@ -19,7 +20,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     var storageRef:StorageReference?
     var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     
-    var viewed:[String]=[]
+   
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,7 +28,8 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     override func viewWillAppear(_ animated: Bool) {
        
-        viewed.removeAll()
+      
+        
         if UserDefaults.standard.object(forKey: "fav_list") != nil
         {
             myFav=ArchiveUtil.loadFav()!
@@ -140,7 +142,6 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         cell.btnFav.tag=indexPath.row
         cell.btnShow.tag=indexPath.row
        
-       
         
         for  fav in myFav
         {
@@ -148,16 +149,12 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
             if fav.Title.isEqual( myList[indexPath.row].Title) && !viewed.contains(myList[indexPath.row].Title)
             {
        
-        
             cell.btnFav.isHidden = true
             viewed.append(myList[indexPath.row].Title)
-            print ("in favorite list " ,myList[indexPath.row].Title)
-            
-            print("size of fav is " ,myFav.count)
-        }
+           
+           }
         
-            //  else
-            //{cell.btnFav.isHidden = false}
+        
             
 
         }

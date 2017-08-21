@@ -71,6 +71,7 @@ class FavController: UIViewController, UITableViewDelegate,UITableViewDataSource
         if editingStyle==UITableViewCellEditingStyle.delete
         {
             myFav.remove(at: indexPath.row)
+              //viewed.removeAll()
             ArchiveUtil.saveFav(Video: myFav)
             self.tableView.reloadData()
         
