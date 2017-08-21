@@ -19,7 +19,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     var storageRef:StorageReference?
     var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     
-    
+    var viewed:[String]=[]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,12 +27,12 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     override func viewWillAppear(_ animated: Bool) {
        
-        
+        viewed.removeAll()
         if UserDefaults.standard.object(forKey: "fav_list") != nil
         {
             myFav=ArchiveUtil.loadFav()!
            
-        }d
+        }
       
         
         self.tableView.reloadData()
@@ -126,6 +126,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     
     var rendared:[String]=[]
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        //let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
         
@@ -144,12 +145,19 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         for  fav in myFav
         {
         
-            if fav.Title.isEqual( myList[indexPath.row].Title)
+            if fav.Title.isEqual( myList[indexPath.row].Title) && !viewed.contains(myList[indexPath.row].Title)
+            {
        
         
-        { cell.btnFav.isHidden = true}
-            else
-            {cell.btnFav.isHidden = false}
+            cell.btnFav.isHidden = true
+            viewed.append(myList[indexPath.row].Title)
+            print ("in favorite list " ,myList[indexPath.row].Title)
+            
+            print("size of fav is " ,myFav.count)
+        }
+        
+            //  else
+            //{cell.btnFav.isHidden = false}
             
 
         }
