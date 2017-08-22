@@ -16,6 +16,8 @@ class Video: NSObject, NSCoding  {
     var myYoutube:String=""
         var myImage:UIImage?=nil
     
+    var inFav:Bool=false
+    
     
     
     required init(title:String, author:String,youtube:String, image:UIImage) {

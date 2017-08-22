@@ -13,7 +13,7 @@
 		F133FCEF1F470BDC00A05094 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCEE1F470BDC00A05094 /* Video.swift */; };
 		F133FCF11F4727CF00A05094 /* FavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCF01F4727CF00A05094 /* FavController.swift */; };
 		F133FCF31F472A3600A05094 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCF21F472A3600A05094 /* FavTableViewCell.swift */; };
-		F176B93E1F4CDAC2009FE0D6 /* cahsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176B93D1F4CDAC2009FE0D6 /* cahsing.swift */; };
+		F176B93E1F4CDAC2009FE0D6 /* cashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176B93D1F4CDAC2009FE0D6 /* cashing.swift */; };
 		F1A90D331F3EE051002B05A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A90D321F3EE051002B05A3 /* TableViewCell.swift */; };
 		F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D341F3F016A002B05A3 /* KidsGame.ttf */; };
 		F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */; };
@@ -70,7 +70,7 @@
 		F133FCEE1F470BDC00A05094 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
 		F133FCF01F4727CF00A05094 /* FavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavController.swift; sourceTree = "<group>"; };
 		F133FCF21F472A3600A05094 /* FavTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
-		F176B93D1F4CDAC2009FE0D6 /* cahsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cahsing.swift; sourceTree = "<group>"; };
+		F176B93D1F4CDAC2009FE0D6 /* cashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cashing.swift; sourceTree = "<group>"; };
 		F1A90D321F3EE051002B05A3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F1A90D341F3F016A002B05A3 /* KidsGame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KidsGame.ttf; sourceTree = "<group>"; };
 		F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CookieMonster.ttf; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		F176B93C1F4CDA5F009FE0D6 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F176B93D1F4CDAC2009FE0D6 /* cahsing.swift */,
+				F176B93D1F4CDAC2009FE0D6 /* cashing.swift */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -557,7 +557,7 @@
 				F1B5E3461F3DE87C00838F40 /* ViewController1.swift in Sources */,
 				F1B5E3481F3DF57500838F40 /* ViewController2.swift in Sources */,
 				F1E5D9D11F48396900580E63 /* youtubeControllerViewController.swift in Sources */,
-				F176B93E1F4CDAC2009FE0D6 /* cahsing.swift in Sources */,
+				F176B93E1F4CDAC2009FE0D6 /* cashing.swift in Sources */,
 				F1E119541F414F7C00459955 /* DesignableUITextField.swift in Sources */,
 				F1B5E3141F3DC07A00838F40 /* ViewController.swift in Sources */,
 				F133FCEF1F470BDC00A05094 /* Video.swift in Sources */,

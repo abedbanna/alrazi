@@ -52,7 +52,7 @@ class TableViewCell: UITableViewCell {
             
            let video=Video(title: v.Title, author:v.Author, youtube: v.Youtube, image: v.Image)
             
-            
+            myList[index].inFav=true
             myFav.append(video)
             
           

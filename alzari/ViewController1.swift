@@ -127,7 +127,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     }
     
     
-    var rendared:[String]=[]
+   
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        //let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
@@ -143,21 +143,15 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         cell.btnShow.tag=indexPath.row
        
         
-        for  fav in myFav
-        {
+     
+       if  myList[indexPath.row].inFav
+       { cell.btnFav.isHidden = true}
         
-            if fav.Title.isEqual( myList[indexPath.row].Title) && !viewed.contains(myList[indexPath.row].Title)
-            {
-       
-            cell.btnFav.isHidden = true
-            viewed.append(myList[indexPath.row].Title)
-           
-           }
         
         
             
 
-        }
+        
         if myFav.count==0
         { cell.btnFav.isHidden = false}
         
@@ -165,7 +159,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     //image load will be here
         
        cell.img.loadImageWithCashe(urlString: myList[indexPath.row].URL,index: indexPath.row)
-      // myList[indexPath.row].Image = UIImage(img)
+    
         
         
 
