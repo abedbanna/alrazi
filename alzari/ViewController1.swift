@@ -161,23 +161,12 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         if myFav.count==0
         { cell.btnFav.isHidden = false}
         
-        if !rendared.contains(myList[indexPath.row].Title)
-        {
+      
+    //image load will be here
         
+       cell.img.loadImageWithCashe(urlString: myList[indexPath.row].URL,index: indexPath.row)
+      // myList[indexPath.row].Image = UIImage(img)
         
-        
-        Storage.storage().reference(forURL: myList[indexPath.row].URL).getData(maxSize: 10 * 1024 * 1024, completion: { (data, error) in
-            DispatchQueue.main.async() {
-        
-                cell.img.image = UIImage(data: data!)
-                myList[indexPath.row].Image=cell.img.image!
-               
-            }
-        })
-            
-            rendared.append(myList[indexPath.row].Title)
-        }
-            
         
 
         
