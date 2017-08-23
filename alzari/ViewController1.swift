@@ -33,9 +33,33 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         if UserDefaults.standard.object(forKey: "fav_list") != nil
         {
             myFav=ArchiveUtil.loadFav()!
-           
+            
+            
+         
         }
       
+        
+        for item in myList
+            
+        {
+        item.inFav=false
+        
+        }
+        for item in myList
+            
+        {
+            for fav in myFav
+            {
+                if fav.Title==item.Title
+                {item.inFav=true
+                    break
+                }
+                
+                
+            }
+            
+            
+        }//end item loop
         
         self.tableView.reloadData()
     }
@@ -73,7 +97,24 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
             if UserDefaults.standard.object(forKey: "fav_list") != nil
             {
                 myFav=ArchiveUtil.loadFav()!
-                // self.tableView.reloadData()
+                
+                
+                for item in myList
+                
+                {
+                for fav in myFav
+                {
+                if fav.Title==item.Title
+                {item.inFav=true
+                   break
+                    }
+               
+                
+                }
+                
+                
+                }//end item loop
+                
             }
             
            
@@ -146,14 +187,13 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
      
        if  myList[indexPath.row].inFav
        { cell.btnFav.isHidden = true}
+        else
+       {
+        cell.btnFav.isHidden = false
+        }
         
         
         
-            
-
-        
-        if myFav.count==0
-        { cell.btnFav.isHidden = false}
         
       
     //image load will be here
