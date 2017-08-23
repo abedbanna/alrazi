@@ -14,12 +14,14 @@
 		F133FCF11F4727CF00A05094 /* FavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCF01F4727CF00A05094 /* FavController.swift */; };
 		F133FCF31F472A3600A05094 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCF21F472A3600A05094 /* FavTableViewCell.swift */; };
 		F176B93E1F4CDAC2009FE0D6 /* cashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176B93D1F4CDAC2009FE0D6 /* cashing.swift */; };
+		F176B9441F4DA5B2009FE0D6 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9431F4DA5B2009FE0D6 /* home.png */; };
+		F176B9461F4DB273009FE0D6 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9451F4DB273009FE0D6 /* user.png */; };
+		F176B9481F4DB2D7009FE0D6 /* fav.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9471F4DB2D7009FE0D6 /* fav.png */; };
+		F176B94A1F4DBA74009FE0D6 /* Bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9491F4DBA74009FE0D6 /* Bookmark.png */; };
 		F1A90D331F3EE051002B05A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A90D321F3EE051002B05A3 /* TableViewCell.swift */; };
 		F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D341F3F016A002B05A3 /* KidsGame.ttf */; };
 		F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */; };
 		F1A90D391F3F12A6002B05A3 /* Asparagus Sprouts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */; };
-		F1A90D3B1F3F153D002B05A3 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D3A1F3F153D002B05A3 /* back.jpg */; };
-		F1A90D3D1F3F2F45002B05A3 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D3C1F3F2F45002B05A3 /* bg.jpg */; };
 		F1B5E3121F3DC07A00838F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */; };
 		F1B5E3141F3DC07A00838F40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3131F3DC07A00838F40 /* ViewController.swift */; };
 		F1B5E3171F3DC07A00838F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B5E3151F3DC07A00838F40 /* Main.storyboard */; };
@@ -71,12 +73,14 @@
 		F133FCF01F4727CF00A05094 /* FavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavController.swift; sourceTree = "<group>"; };
 		F133FCF21F472A3600A05094 /* FavTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		F176B93D1F4CDAC2009FE0D6 /* cashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cashing.swift; sourceTree = "<group>"; };
+		F176B9431F4DA5B2009FE0D6 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../Icons/home.png; sourceTree = "<group>"; };
+		F176B9451F4DB273009FE0D6 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = ../../../Icons/user.png; sourceTree = "<group>"; };
+		F176B9471F4DB2D7009FE0D6 /* fav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fav.png; path = ../../../Icons/fav.png; sourceTree = "<group>"; };
+		F176B9491F4DBA74009FE0D6 /* Bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bookmark.png; path = ../../../Icons/Bookmark.png; sourceTree = "<group>"; };
 		F1A90D321F3EE051002B05A3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		F1A90D341F3F016A002B05A3 /* KidsGame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KidsGame.ttf; sourceTree = "<group>"; };
-		F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CookieMonster.ttf; sourceTree = "<group>"; };
-		F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asparagus Sprouts.ttf"; sourceTree = "<group>"; };
-		F1A90D3A1F3F153D002B05A3 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
-		F1A90D3C1F3F2F45002B05A3 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		F1A90D341F3F016A002B05A3 /* KidsGame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KidsGame.ttf; path = alzari/KidsGame.ttf; sourceTree = "<group>"; };
+		F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CookieMonster.ttf; path = alzari/CookieMonster.ttf; sourceTree = "<group>"; };
+		F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Asparagus Sprouts.ttf"; path = "alzari/Asparagus Sprouts.ttf"; sourceTree = "<group>"; };
 		F1B5E30E1F3DC07A00838F40 /* alzari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alzari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1B5E3131F3DC07A00838F40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,15 +97,15 @@
 		F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1B5E3451F3DE87C00838F40 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		F1B5E3471F3DF57500838F40 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		F1E1194B1F40CCC200459955 /* intro1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro1.jpg; sourceTree = "<group>"; };
+		F1E1194B1F40CCC200459955 /* intro1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = intro1.jpg; path = alzari/intro1.jpg; sourceTree = "<group>"; };
 		F1E119531F414F7C00459955 /* DesignableUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
-		F1E119551F4151BA00459955 /* mother.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mother.png; sourceTree = "<group>"; };
-		F1E119571F41540D00459955 /* pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pass.png; sourceTree = "<group>"; };
+		F1E119551F4151BA00459955 /* mother.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mother.png; path = alzari/mother.png; sourceTree = "<group>"; };
+		F1E119571F41540D00459955 /* pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pass.png; path = alzari/pass.png; sourceTree = "<group>"; };
 		F1E1195A1F47077C00459955 /* myWifi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myWifi.swift; sourceTree = "<group>"; };
 		F1E5D9CE1F47719100580E63 /* ArchiveUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveUtil.swift; sourceTree = "<group>"; };
 		F1E5D9D01F48396900580E63 /* youtubeControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = youtubeControllerViewController.swift; sourceTree = "<group>"; };
 		F1E5D9D21F483CAE00580E63 /* YouTubePlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YouTubePlayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/alzari-dhoobriseeqvlwcvywcblyieyugq/Build/Products/Debug-iphonesimulator/YouTubePlayer/YouTubePlayer.framework"; sourceTree = "<group>"; };
-		F1E5D9D41F48D1FC00580E63 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video.png; path = ../../../../Icons/roro/video.png; sourceTree = "<group>"; };
+		F1E5D9D41F48D1FC00580E63 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video.png; path = ../../../Icons/roro/video.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,33 @@
 			name = helpers;
 			sourceTree = "<group>";
 		};
+		F176B93F1F4D9DB8009FE0D6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F176B9491F4DBA74009FE0D6 /* Bookmark.png */,
+				F176B9471F4DB2D7009FE0D6 /* fav.png */,
+				F176B9451F4DB273009FE0D6 /* user.png */,
+				F176B9431F4DA5B2009FE0D6 /* home.png */,
+				F1E1194B1F40CCC200459955 /* intro1.jpg */,
+				F1E119551F4151BA00459955 /* mother.png */,
+				F1E5D9D41F48D1FC00580E63 /* video.png */,
+				F1E119571F41540D00459955 /* pass.png */,
+			);
+			name = images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F176B9401F4DA0D8009FE0D6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */,
+				F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */,
+				F1A90D341F3F016A002B05A3 /* KidsGame.ttf */,
+			);
+			name = fonts;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		F1B5E3051F3DC07A00838F40 = {
 			isa = PBXGroup;
 			children = (
@@ -189,18 +220,11 @@
 		F1B5E3101F3DC07A00838F40 /* alzari */ = {
 			isa = PBXGroup;
 			children = (
+				F176B9401F4DA0D8009FE0D6 /* fonts */,
+				F176B93F1F4D9DB8009FE0D6 /* images */,
 				F176B93C1F4CDA5F009FE0D6 /* helpers */,
-				F1E5D9D41F48D1FC00580E63 /* video.png */,
 				F133FCEE1F470BDC00A05094 /* Video.swift */,
 				F1E1195A1F47077C00459955 /* myWifi.swift */,
-				F1E119571F41540D00459955 /* pass.png */,
-				F1E119551F4151BA00459955 /* mother.png */,
-				F1E1194B1F40CCC200459955 /* intro1.jpg */,
-				F1A90D3C1F3F2F45002B05A3 /* bg.jpg */,
-				F1A90D3A1F3F153D002B05A3 /* back.jpg */,
-				F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */,
-				F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */,
-				F1A90D341F3F016A002B05A3 /* KidsGame.ttf */,
 				F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */,
 				F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */,
 				F1B5E3131F3DC07A00838F40 /* ViewController.swift */,
@@ -355,18 +379,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1A90D3B1F3F153D002B05A3 /* back.jpg in Resources */,
-				F1A90D3D1F3F2F45002B05A3 /* bg.jpg in Resources */,
 				F1E119581F41540D00459955 /* pass.png in Resources */,
 				F1B5E31C1F3DC07A00838F40 /* LaunchScreen.storyboard in Resources */,
 				F1E5D9D51F48D1FC00580E63 /* video.png in Resources */,
 				F1A90D391F3F12A6002B05A3 /* Asparagus Sprouts.ttf in Resources */,
 				F1E1194C1F40CCC200459955 /* intro1.jpg in Resources */,
+				F176B9481F4DB2D7009FE0D6 /* fav.png in Resources */,
 				F1B5E3401F3DC13300838F40 /* GoogleService-Info.plist in Resources */,
 				F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */,
 				F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */,
 				F1E119561F4151BA00459955 /* mother.png in Resources */,
+				F176B9441F4DA5B2009FE0D6 /* home.png in Resources */,
+				F176B94A1F4DBA74009FE0D6 /* Bookmark.png in Resources */,
 				F1B5E3191F3DC07A00838F40 /* Assets.xcassets in Resources */,
+				F176B9461F4DB273009FE0D6 /* user.png in Resources */,
 				F1B5E3171F3DC07A00838F40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

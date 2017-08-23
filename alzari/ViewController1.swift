@@ -25,6 +25,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     
+    @IBOutlet weak var barItem: UITabBarItem!
     
     override func viewWillAppear(_ animated: Bool) {
        
@@ -69,7 +70,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
       
         let wifi=myWifi()
        
-        
+        UITabBar.appearance().tintColor = UIColor(red: 45/255, green: 137/255, blue: 198/255, alpha: 1.0) /* #2d89c6 */
         
         if wifi.isInternetAvailable()
         {
