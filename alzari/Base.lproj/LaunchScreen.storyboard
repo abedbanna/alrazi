@@ -24,19 +24,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ilC-h8-ZKt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visual play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hK4-Ih-h1V">
+                                <rect key="frame" x="0.0" y="50" width="375" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ilC-h8-ZKt" secondAttribute="trailing" id="F1t-qU-wpu"/>
                             <constraint firstAttribute="bottom" secondItem="ilC-h8-ZKt" secondAttribute="bottom" id="KaY-WG-JgA"/>
+                            <constraint firstItem="hK4-Ih-h1V" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="30" id="Kjd-tP-0sg"/>
+                            <constraint firstItem="hK4-Ih-h1V" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="NPs-8z-ydG"/>
                             <constraint firstItem="ilC-h8-ZKt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cZ6-wU-wXv"/>
+                            <constraint firstAttribute="trailing" secondItem="hK4-Ih-h1V" secondAttribute="trailing" id="dTZ-UY-jIs"/>
                             <constraint firstItem="ilC-h8-ZKt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="o4m-Mu-1Mx"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>

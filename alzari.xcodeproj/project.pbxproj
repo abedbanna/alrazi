@@ -13,13 +13,14 @@
 		F133FCEF1F470BDC00A05094 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCEE1F470BDC00A05094 /* Video.swift */; };
 		F133FCF11F4727CF00A05094 /* FavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCF01F4727CF00A05094 /* FavController.swift */; };
 		F133FCF31F472A3600A05094 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133FCF21F472A3600A05094 /* FavTableViewCell.swift */; };
+		F1434D671F50470900D0D2BC /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1434D661F50470900D0D2BC /* logo.jpg */; };
+		F1434D691F50534E00D0D2BC /* AdvicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1434D681F50534E00D0D2BC /* AdvicesViewController.swift */; };
 		F176B93E1F4CDAC2009FE0D6 /* cashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176B93D1F4CDAC2009FE0D6 /* cashing.swift */; };
 		F176B9441F4DA5B2009FE0D6 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9431F4DA5B2009FE0D6 /* home.png */; };
 		F176B9461F4DB273009FE0D6 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9451F4DB273009FE0D6 /* user.png */; };
 		F176B9481F4DB2D7009FE0D6 /* fav.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9471F4DB2D7009FE0D6 /* fav.png */; };
 		F176B94A1F4DBA74009FE0D6 /* Bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9491F4DBA74009FE0D6 /* Bookmark.png */; };
 		F1A90D331F3EE051002B05A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A90D321F3EE051002B05A3 /* TableViewCell.swift */; };
-		F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D341F3F016A002B05A3 /* KidsGame.ttf */; };
 		F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */; };
 		F1A90D391F3F12A6002B05A3 /* Asparagus Sprouts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */; };
 		F1B5E3121F3DC07A00838F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */; };
@@ -71,14 +72,15 @@
 		F133FCEE1F470BDC00A05094 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
 		F133FCF01F4727CF00A05094 /* FavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavController.swift; sourceTree = "<group>"; };
 		F133FCF21F472A3600A05094 /* FavTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
+		F1434D661F50470900D0D2BC /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = "../../../../Icons/roro/app ICons/logo.jpg"; sourceTree = "<group>"; };
+		F1434D681F50534E00D0D2BC /* AdvicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvicesViewController.swift; sourceTree = "<group>"; };
 		F176B93D1F4CDAC2009FE0D6 /* cashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cashing.swift; sourceTree = "<group>"; };
 		F176B9431F4DA5B2009FE0D6 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../Icons/home.png; sourceTree = "<group>"; };
 		F176B9451F4DB273009FE0D6 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = ../../../Icons/user.png; sourceTree = "<group>"; };
 		F176B9471F4DB2D7009FE0D6 /* fav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fav.png; path = ../../../Icons/fav.png; sourceTree = "<group>"; };
 		F176B9491F4DBA74009FE0D6 /* Bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bookmark.png; path = ../../../Icons/Bookmark.png; sourceTree = "<group>"; };
 		F1A90D321F3EE051002B05A3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		F1A90D341F3F016A002B05A3 /* KidsGame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KidsGame.ttf; path = alzari/KidsGame.ttf; sourceTree = "<group>"; };
-		F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CookieMonster.ttf; path = alzari/CookieMonster.ttf; sourceTree = "<group>"; };
+		F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CookieMonster.ttf; sourceTree = "<group>"; };
 		F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Asparagus Sprouts.ttf"; path = "alzari/Asparagus Sprouts.ttf"; sourceTree = "<group>"; };
 		F1B5E30E1F3DC07A00838F40 /* alzari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alzari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,8 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */,
-				F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */,
-				F1A90D341F3F016A002B05A3 /* KidsGame.ttf */,
 			);
 			name = fonts;
 			path = ..;
@@ -218,6 +218,8 @@
 		F1B5E3101F3DC07A00838F40 /* alzari */ = {
 			isa = PBXGroup;
 			children = (
+				F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */,
+				F1434D661F50470900D0D2BC /* logo.jpg */,
 				F176B9401F4DA0D8009FE0D6 /* fonts */,
 				F176B93F1F4D9DB8009FE0D6 /* images */,
 				F176B93C1F4CDA5F009FE0D6 /* helpers */,
@@ -226,6 +228,7 @@
 				F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */,
 				F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */,
 				F1B5E3151F3DC07A00838F40 /* Main.storyboard */,
+				F1434D681F50534E00D0D2BC /* AdvicesViewController.swift */,
 				F1E5D9D01F48396900580E63 /* youtubeControllerViewController.swift */,
 				F1A90D321F3EE051002B05A3 /* TableViewCell.swift */,
 				F1B5E3471F3DF57500838F40 /* ViewController2.swift */,
@@ -383,7 +386,6 @@
 				F1E1194C1F40CCC200459955 /* intro1.jpg in Resources */,
 				F176B9481F4DB2D7009FE0D6 /* fav.png in Resources */,
 				F1B5E3401F3DC13300838F40 /* GoogleService-Info.plist in Resources */,
-				F1A90D351F3F016A002B05A3 /* KidsGame.ttf in Resources */,
 				F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */,
 				F1E119561F4151BA00459955 /* mother.png in Resources */,
 				F176B9441F4DA5B2009FE0D6 /* home.png in Resources */,
@@ -391,6 +393,7 @@
 				F1B5E3191F3DC07A00838F40 /* Assets.xcassets in Resources */,
 				F176B9461F4DB273009FE0D6 /* user.png in Resources */,
 				F1B5E3171F3DC07A00838F40 /* Main.storyboard in Resources */,
+				F1434D671F50470900D0D2BC /* logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +582,7 @@
 				F1B5E3481F3DF57500838F40 /* ViewController2.swift in Sources */,
 				F1E5D9D11F48396900580E63 /* youtubeControllerViewController.swift in Sources */,
 				F176B93E1F4CDAC2009FE0D6 /* cashing.swift in Sources */,
+				F1434D691F50534E00D0D2BC /* AdvicesViewController.swift in Sources */,
 				F1E119541F414F7C00459955 /* DesignableUITextField.swift in Sources */,
 				F133FCEF1F470BDC00A05094 /* Video.swift in Sources */,
 				F133FCF11F4727CF00A05094 /* FavController.swift in Sources */,
