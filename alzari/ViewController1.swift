@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
-import FirebaseStorage
+
 var myList:[Video]=[]
  var viewed:[String]=[]
 class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSource{
@@ -17,7 +17,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
     
     var ref: DatabaseReference?
     var handle:DatabaseHandle?
-    var storageRef:StorageReference?
+  
     var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
     
    
@@ -81,7 +81,7 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         activityIndicator.startAnimating()
     
     ref = Database.database().reference()
-         storageRef=Storage.storage().reference()
+    
     
     handle=ref?.child("list").observe(.childAdded, with: { (snapshot) in
         
