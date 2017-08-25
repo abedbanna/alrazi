@@ -23,7 +23,6 @@
 		F1A90D371F3F047A002B05A3 /* CookieMonster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */; };
 		F1A90D391F3F12A6002B05A3 /* Asparagus Sprouts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */; };
 		F1B5E3121F3DC07A00838F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */; };
-		F1B5E3141F3DC07A00838F40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B5E3131F3DC07A00838F40 /* ViewController.swift */; };
 		F1B5E3171F3DC07A00838F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B5E3151F3DC07A00838F40 /* Main.storyboard */; };
 		F1B5E3191F3DC07A00838F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B5E3181F3DC07A00838F40 /* Assets.xcassets */; };
 		F1B5E31C1F3DC07A00838F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B5E31A1F3DC07A00838F40 /* LaunchScreen.storyboard */; };
@@ -83,7 +82,6 @@
 		F1A90D381F3F12A6002B05A3 /* Asparagus Sprouts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Asparagus Sprouts.ttf"; path = "alzari/Asparagus Sprouts.ttf"; sourceTree = "<group>"; };
 		F1B5E30E1F3DC07A00838F40 /* alzari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alzari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1B5E3131F3DC07A00838F40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1B5E3161F3DC07A00838F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1B5E3181F3DC07A00838F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1B5E31B1F3DC07A00838F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 				F1E1195A1F47077C00459955 /* myWifi.swift */,
 				F1B5E33F1F3DC13300838F40 /* GoogleService-Info.plist */,
 				F1B5E3111F3DC07A00838F40 /* AppDelegate.swift */,
-				F1B5E3131F3DC07A00838F40 /* ViewController.swift */,
 				F1B5E3151F3DC07A00838F40 /* Main.storyboard */,
 				F1E5D9D01F48396900580E63 /* youtubeControllerViewController.swift */,
 				F1A90D321F3EE051002B05A3 /* TableViewCell.swift */,
@@ -471,7 +468,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-alzari/Pods-alzari-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
@@ -480,7 +476,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
@@ -585,7 +580,6 @@
 				F1E5D9D11F48396900580E63 /* youtubeControllerViewController.swift in Sources */,
 				F176B93E1F4CDAC2009FE0D6 /* cashing.swift in Sources */,
 				F1E119541F414F7C00459955 /* DesignableUITextField.swift in Sources */,
-				F1B5E3141F3DC07A00838F40 /* ViewController.swift in Sources */,
 				F133FCEF1F470BDC00A05094 /* Video.swift in Sources */,
 				F133FCF11F4727CF00A05094 /* FavController.swift in Sources */,
 				F1B5E3121F3DC07A00838F40 /* AppDelegate.swift in Sources */,
