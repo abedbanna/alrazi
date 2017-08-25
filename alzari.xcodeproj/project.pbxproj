@@ -738,7 +738,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E13868ED6D4DD70BE9BD5DB3 /* Pods-alzari.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = icons;
 				DEVELOPMENT_TEAM = XJG5EH7JWQ;
 				INFOPLIST_FILE = alzari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -752,7 +752,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D33FB063855F9AFB05E90BE2 /* Pods-alzari.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = icons;
 				DEVELOPMENT_TEAM = XJG5EH7JWQ;
 				INFOPLIST_FILE = alzari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
