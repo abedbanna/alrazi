@@ -29,7 +29,7 @@ class TableViewCell: UITableViewCell {
         if self.window!.rootViewController as? UITabBarController != nil {
             let tababarController = self.window!.rootViewController as! UITabBarController
   
-            tababarController.selectedIndex = 3
+            tababarController.selectedIndex = 2
         }
 
 
