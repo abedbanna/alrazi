@@ -18,6 +18,7 @@
 		F1434D6B1F51CB0000D0D2BC /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1434D6A1F51CB0000D0D2BC /* ArticlesViewController.swift */; };
 		F1434D6D1F51D1F700D0D2BC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1434D6C1F51D1F700D0D2BC /* Article.swift */; };
 		F1434D6F1F51D4E300D0D2BC /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1434D6E1F51D4E300D0D2BC /* ArticleTableViewCell.swift */; };
+		F1434D711F5525E800D0D2BC /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1434D701F5525E800D0D2BC /* MoreViewController.swift */; };
 		F176B93E1F4CDAC2009FE0D6 /* cashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176B93D1F4CDAC2009FE0D6 /* cashing.swift */; };
 		F176B9441F4DA5B2009FE0D6 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9431F4DA5B2009FE0D6 /* home.png */; };
 		F176B9461F4DB273009FE0D6 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = F176B9451F4DB273009FE0D6 /* user.png */; };
@@ -80,6 +81,7 @@
 		F1434D6A1F51CB0000D0D2BC /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		F1434D6C1F51D1F700D0D2BC /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F1434D6E1F51D4E300D0D2BC /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		F1434D701F5525E800D0D2BC /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		F176B93D1F4CDAC2009FE0D6 /* cashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cashing.swift; sourceTree = "<group>"; };
 		F176B9431F4DA5B2009FE0D6 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../Icons/home.png; sourceTree = "<group>"; };
 		F176B9451F4DB273009FE0D6 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = ../../../Icons/user.png; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				F1434D6A1F51CB0000D0D2BC /* ArticlesViewController.swift */,
 				F1434D6C1F51D1F700D0D2BC /* Article.swift */,
 				F1434D6E1F51D4E300D0D2BC /* ArticleTableViewCell.swift */,
+				F1434D701F5525E800D0D2BC /* MoreViewController.swift */,
 			);
 			path = alzari;
 			sourceTree = "<group>";
@@ -480,7 +483,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-alzari/Pods-alzari-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
@@ -488,7 +490,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
@@ -591,6 +592,7 @@
 				F1434D6B1F51CB0000D0D2BC /* ArticlesViewController.swift in Sources */,
 				F1B5E3481F3DF57500838F40 /* ViewController2.swift in Sources */,
 				F1E5D9D11F48396900580E63 /* youtubeControllerViewController.swift in Sources */,
+				F1434D711F5525E800D0D2BC /* MoreViewController.swift in Sources */,
 				F176B93E1F4CDAC2009FE0D6 /* cashing.swift in Sources */,
 				F1434D691F50534E00D0D2BC /* AdvicesViewController.swift in Sources */,
 				F1E119541F414F7C00459955 /* DesignableUITextField.swift in Sources */,

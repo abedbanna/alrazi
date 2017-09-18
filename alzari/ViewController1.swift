@@ -64,10 +64,15 @@ class ViewController1: UIViewController ,UITableViewDelegate,UITableViewDataSour
         
         self.tableView.reloadData()
     }
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
       
+      
+        
+        
+        
+        
         let wifi=myWifi()
        
         UITabBar.appearance().tintColor = UIColor(red: 45/255, green: 137/255, blue: 198/255, alpha: 1.0) /* #2d89c6 */
