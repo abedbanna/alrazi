@@ -10,8 +10,27 @@ import UIKit
 import Firebase
 import GoogleMobileAds
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate {
+    var gViewController: UIViewController?
+    var mInterstitial: GADInterstitial!
 
+    func showAdmobInterstitial()
+    {
+        let kGoogleFullScreenAppUnitID = "ca-app-pub-8889796611679482/6230573224";
+        self.mInterstitial = GADInterstitial.init(adUnitID:kGoogleFullScreenAppUnitID )
+        
+        mInterstitial.delegate = self
+        let Request  = GADRequest()
+       Request.testDevices = [ "35a4ae7a86a3ad5eb7f4b75255fe6e14" ];
+        mInterstitial.load(Request)
+    }
+    
+    func interstitialDidReceiveAd(_ ad: GADInterstitial)
+    {
+        ad.present(fromRootViewController: self.gViewController!)
+    }
+    
+    
     var window: UIWindow?
 
 

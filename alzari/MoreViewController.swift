@@ -11,28 +11,19 @@ import GoogleMobileAds
 class MoreViewController: UIViewController {
  
   
-    
     @IBOutlet weak var nativeExpressAdView: GADNativeExpressAdView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        //Admob Ads
-        
-        nativeExpressAdView.adUnitID = "ca-app-pub-3940256099942544/8897359316"
-        nativeExpressAdView.rootViewController = self
-        
-        let request = GADRequest()
-        nativeExpressAdView.load(request)
-        
-        
-        //------------------
-        
+       
+        let App = UIApplication.shared.delegate as! AppDelegate
+        App.gViewController = self;
+        App.showAdmobInterstitial()
         
         
         // Do any additional setup after loading the view.
     }
-
+   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

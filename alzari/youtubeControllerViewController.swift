@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import GoogleMobileAds
 import youtube_ios_player_helper
 var selectedVideo:Video?=nil
 class youtubeControllerViewController: UIViewController {
 var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
+    
+    @IBOutlet weak var bannerView: GADBannerView!
     override func viewDidLoad() {
         
         super.viewDidLoad()
-       
+        
+        //Admob Ads
+        let request=GADRequest()
+        
+        //bannerView.delegate = self
+        //self.view.addSubview(bannerView)
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(request)
+        
+        //------------------
+        
         // Do any additional setup after loading the view.
     }
     
