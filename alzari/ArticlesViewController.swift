@@ -20,6 +20,10 @@ class ArticlesViewController: UIViewController,UITableViewDelegate,UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let App = UIApplication.shared.delegate as! AppDelegate
+        App.gViewController = self;
+        App.showAdmobInterstitial()
+        
         activityIndicator.center=self.view.center
         activityIndicator.hidesWhenStopped=true
         activityIndicator.activityIndicatorViewStyle=UIActivityIndicatorViewStyle.gray
@@ -80,6 +84,8 @@ class ArticlesViewController: UIViewController,UITableViewDelegate,UITableViewDa
         cell.lblTitle?.text=myArticles[indexPath.row].Title
         cell.lblAuthor?.text=myArticles[indexPath.row].Author
         //cell.btnFav.tag=indexPath.row
+        cell.btnReadMore.tag=indexPath.row
+        
         cell.lblDesc?.text=myArticles[indexPath.row].Desc
         
 

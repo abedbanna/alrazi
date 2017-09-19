@@ -14,6 +14,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate {
     var gViewController: UIViewController?
     var mInterstitial: GADInterstitial!
 
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        if let rootViewController = self.topViewControllerWithRootViewController(rootViewController: window?.rootViewController) {
+            if (rootViewController.responds(to: #selector(youtubeControllerViewController.canRotate))) {
+                // Unlock landscape view orientations for this view controller
+                return .allButUpsideDown;
+            }
+        }
+        
+        // Only allow portrait (standard behaviour)
+        return .portrait;
+    }
+    
+    
+    private func topViewControllerWithRootViewController(rootViewController: UIViewController!) -> UIViewController? {
+        if (rootViewController == nil) { return nil }
+        if (rootViewController.isKind(of: (UITabBarController).self)) {
+            return topViewControllerWithRootViewController(rootViewController: (rootViewController as! UITabBarController).selectedViewController)
+        } else if (rootViewController.isKind(of:(UINavigationController).self)) {
+            return topViewControllerWithRootViewController(rootViewController: (rootViewController as! UINavigationController).visibleViewController)
+        } else if (rootViewController.presentedViewController != nil) {
+            return topViewControllerWithRootViewController(rootViewController: rootViewController.presentedViewController)
+        }
+        return rootViewController
+    }
+    
+    
+    
     func showAdmobInterstitial()
     {
         let kGoogleFullScreenAppUnitID = "ca-app-pub-8889796611679482/6230573224";
@@ -30,6 +58,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate {
         ad.present(fromRootViewController: self.gViewController!)
     }
     
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+      // showAdmobInterstitial()
+    }
     
     var window: UIWindow?
 
@@ -67,6 +98,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    
+    
 
 
 }

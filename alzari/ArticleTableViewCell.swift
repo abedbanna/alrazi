@@ -13,6 +13,20 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var lblAuthor: UILabel!
     @IBOutlet weak var lblTitle: UILabel!
    
+    @IBOutlet weak var btnReadMore: UIButton!
+    
+    
+    @IBAction func btnShowUrl(_ sender: Any) {
+        guard let url = URL(string: myArticles[(sender as! UIButton).tag].URL) else {
+            return //be safe
+        }
+        
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
     override func awakeFromNib() {
        
         super.awakeFromNib()

@@ -60,7 +60,7 @@ class FavController: UIViewController, UITableViewDelegate,UITableViewDataSource
        cell.lblAuthor?.text=myFav[indexPath.row].Author
         // cell.lblTitle?.text=myFav[indexPath.row].Title
      cell.lblTitle?.text=myFav[indexPath.row].Title
-        
+        cell.btnShow.tag=indexPath.row
         
         cell.img.image=myFav[indexPath.row].Image
         

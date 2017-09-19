@@ -23,7 +23,8 @@ var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
         
         //bannerView.delegate = self
         //self.view.addSubview(bannerView)
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-8889796611679482/5293359092"
+        request.testDevices = [ "35a4ae7a86a3ad5eb7f4b75255fe6e14" ];
         bannerView.rootViewController = self
         bannerView.load(request)
         
@@ -31,9 +32,24 @@ var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
         
         // Do any additional setup after loading the view.
     }
+ 
+    
+    override func viewWillDisappear(_ animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+        if (self.isMovingFromParentViewController) {
+            UIDevice.current.setValue(Int(UIInterfaceOrientation.portrait.rawValue), forKey: "orientation")
+        }
+    }
+    
+     func canRotate() -> Void {}
     
     override func viewWillAppear(_ animated: Bool) {
-       
+        
+        self.dismiss(animated: true) { () -> Void in
+            UIDevice.current.setValue(Int(UIInterfaceOrientation.portrait.rawValue), forKey: "orientation")
+            
+        }
         if selectedVideo?.Youtube != nil
         {
         activityIndicator.center=self.view.center
@@ -42,13 +58,21 @@ var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
    
+            
+            
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
             
            
            if  self.viewer.load(withVideoId: (selectedVideo?.Youtube)!)
            {
-            //sleep(1)
-            //self.activityIndicator.stopAnimating()
+            let elapsed=10.0
+            let delay = max(0.0, 2.0 - elapsed)
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.isHidden = true
+            }
+            
+            
             }
             
             }
