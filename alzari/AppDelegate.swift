@@ -9,8 +9,10 @@
 import UIKit
 import Firebase
 import GoogleMobileAds
+import UserNotifications
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate ,MessagingDelegate{
     var gViewController: UIViewController?
     var mInterstitial: GADInterstitial!
 
@@ -63,11 +65,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate {
     }
     
     var window: UIWindow?
-
+let gcmMessageIDKey = "gcm.message_id"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
       
+     
+        
+        if #available(iOS 10.0, *) {
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
+            
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_, _ in })
+        } else {
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(settings)
+        }
+        
+        application.registerForRemoteNotifications()
+        
+        let token = Messaging.messaging().fcmToken
+        print("FCM token: \(token ?? "")")
+        
         FirebaseApp.configure()
         
         // Initialize the Google Mobile Ads SDK.
@@ -77,6 +100,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate {
         return true
     }
 
+    
+    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -101,8 +129,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate {
     
     
     
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+        // If you are receiving a notification message while your app is in the background,
+        // this callback will not be fired till the user taps on the notification launching the application.
+        // TODO: Handle data of notification
+        
+        // With swizzling disabled you must let Messaging know about the message, for Analytics
+        // Messaging.messaging().appDidReceiveMessage(userInfo)
+        
+        // Print message ID.
+        if let messageID = userInfo[gcmMessageIDKey] {
+            print("Message ID: \(messageID)")
+        }
+        
+        // Print full message.
+        print(userInfo)
+    }
     
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        // If you are receiving a notification message while your app is in the background,
+        // this callback will not be fired till the user taps on the notification launching the application.
+        // TODO: Handle data of notification
+        
+        // With swizzling disabled you must let Messaging know about the message, for Analytics
+        // Messaging.messaging().appDidReceiveMessage(userInfo)
+        
+        // Print message ID.
+        if let messageID = userInfo[gcmMessageIDKey] {
+            print("Message ID: \(messageID)")
+        }
+        
+        // Print full message.
+        print(userInfo)
+        
+        completionHandler(UIBackgroundFetchResult.newData)
+        // Change this to your preferred presentation option
+        
+    }
 
 
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        // Let FCM know about the message for analytics etc.
+        Messaging.messaging().appDidReceiveMessage(userInfo)
+        // handle your message
+    }
 }
 

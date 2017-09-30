@@ -73,6 +73,7 @@
 		D33FB063855F9AFB05E90BE2 /* Pods-alzari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzari.release.xcconfig"; path = "Pods/Target Support Files/Pods-alzari/Pods-alzari.release.xcconfig"; sourceTree = "<group>"; };
 		E13868ED6D4DD70BE9BD5DB3 /* Pods-alzari.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alzari.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alzari/Pods-alzari.debug.xcconfig"; sourceTree = "<group>"; };
 		E346D766BBF643F2DF124AF5 /* Pods_alzariTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alzariTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F128FC9A1F7E6650007A1455 /* alzari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = alzari.entitlements; sourceTree = "<group>"; };
 		F133FCEE1F470BDC00A05094 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
 		F133FCF01F4727CF00A05094 /* FavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavController.swift; sourceTree = "<group>"; };
 		F133FCF21F472A3600A05094 /* FavTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 		F1B5E3101F3DC07A00838F40 /* alzari */ = {
 			isa = PBXGroup;
 			children = (
+				F128FC9A1F7E6650007A1455 /* alzari.entitlements */,
 				F1A90D361F3F047A002B05A3 /* CookieMonster.ttf */,
 				F1434D661F50470900D0D2BC /* logo.jpg */,
 				F176B9401F4DA0D8009FE0D6 /* fonts */,
@@ -353,6 +355,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = XJG5EH7JWQ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					F1B5E3211F3DC07A00838F40 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -483,6 +490,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-alzari/Pods-alzari-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
@@ -490,6 +498,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
@@ -757,6 +766,7 @@
 			baseConfigurationReference = E13868ED6D4DD70BE9BD5DB3 /* Pods-alzari.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = icons;
+				CODE_SIGN_ENTITLEMENTS = alzari/alzari.entitlements;
 				DEVELOPMENT_TEAM = XJG5EH7JWQ;
 				INFOPLIST_FILE = alzari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -771,6 +781,7 @@
 			baseConfigurationReference = D33FB063855F9AFB05E90BE2 /* Pods-alzari.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = icons;
+				CODE_SIGN_ENTITLEMENTS = alzari/alzari.entitlements;
 				DEVELOPMENT_TEAM = XJG5EH7JWQ;
 				INFOPLIST_FILE = alzari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
