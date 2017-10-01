@@ -13,7 +13,10 @@ class FavController: UIViewController, UITableViewDelegate,UITableViewDataSource
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let App = UIApplication.shared.delegate as! AppDelegate
+        App.gViewController = self;
+        App.showAdmobInterstitial()
+        
         // Do any additional setup after loading the view.
         if UserDefaults.standard.object(forKey: "fav_list") != nil
         {

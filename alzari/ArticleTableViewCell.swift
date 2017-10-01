@@ -17,14 +17,27 @@ class ArticleTableViewCell: UITableViewCell {
     
     
     @IBAction func btnShowUrl(_ sender: Any) {
-        guard let url = URL(string: myArticles[(sender as! UIButton).tag].URL) else {
-            return //be safe
-        }
+        let url =  myArticles[(sender as! UIButton).tag].URL
         
-        if #available(iOS 10.0, *) {
+        
+      /*  if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
             UIApplication.shared.openURL(url)
+        }*/
+        
+        let index = (sender as! UIButton).tag
+        selectedVideo =   Video(title: "<#T##String#>", author: "<#T##String#>", youtube: url, url: "<#T##String#>")
+        
+        
+        
+        print(index)
+        
+        // self.window?.rootViewController?.performSegue(withIdentifier: "segue1", sender: self)
+        if self.window!.rootViewController as? UITabBarController != nil {
+            let tababarController = self.window!.rootViewController as! UITabBarController
+            
+            tababarController.selectedIndex = 2
         }
     }
     override func awakeFromNib() {

@@ -24,7 +24,7 @@ var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
         //bannerView.delegate = self
         //self.view.addSubview(bannerView)
         bannerView.adUnitID = "ca-app-pub-8889796611679482/5293359092"
-        request.testDevices = [ "35a4ae7a86a3ad5eb7f4b75255fe6e14" ];
+        //request.testDevices = [ "35a4ae7a86a3ad5eb7f4b75255fe6e14" ];
         bannerView.rootViewController = self
         bannerView.load(request)
         
@@ -62,8 +62,8 @@ var activityIndicator:UIActivityIndicatorView=UIActivityIndicatorView()
             
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
             
-           
-           if  self.viewer.load(withVideoId: (selectedVideo?.Youtube)!)
+           let playerVars = [ "rel" : 0 ]
+           if  self.viewer.load(withVideoId: (selectedVideo?.Youtube)!,playerVars: playerVars)
            {
             let elapsed=10.0
             let delay = max(0.0, 2.0 - elapsed)

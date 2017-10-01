@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GADInterstitialDelegate ,M
         
         mInterstitial.delegate = self
         let Request  = GADRequest()
-       Request.testDevices = [ "35a4ae7a86a3ad5eb7f4b75255fe6e14" ];
+       //Request.testDevices = [ "35a4ae7a86a3ad5eb7f4b75255fe6e14" ];
         mInterstitial.load(Request)
     }
     
